@@ -1,0 +1,40 @@
+.header
+  background-color: #000
+  &-top
+    display: flex
+    justify-content: space-between
+    padding: 26px 0 39px 0
+  &-nav
+    flex-basis: 70%
+
+.nav-item
+  display: flex
+  justify-content: space-around
+
+  &__list
+    list-style: none
+    font-weight: 300
+    font-size: 18px
+    line-height: 21px
+  &__link
+    text-decoration: none
+    color: $text-color
+    display: inline-block
+    &::after
+      content: ''
+      display: block
+      background-color: #E2A300
+      height: 2px
+      width: 0
+      transition: 0.3s
+    &:hover
+      &::after
+        width: 100%
+
+// Логотип
+.link-logo
+  display: flex
+  align-items: center
+.logo
+  margin-right: 10px
+// Конец логотипа
