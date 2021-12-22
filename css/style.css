@@ -356,6 +356,14 @@ body {
   margin: auto;
 }
 
+ul {
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 .header {
   background-color: #000;
 }
@@ -421,5 +429,120 @@ body {
 
 .logo {
   margin-right: 10px;
+}
+
+.header-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0 5px 0;
+}
+
+.hello {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  width: 447px;
+}
+
+.hero-text__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 82px;
+  text-transform: uppercase;
+  margin: 27px 0;
+}
+
+.hero-text__discription {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 27px;
+}
+
+.hero-text__button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000;
+  padding: 14px 38px;
+  background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+  -webkit-box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+          box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+  border-radius: 6px;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+}
+
+.set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border: 67px solid #00C4F0;
+  -webkit-filter: drop-shadow(0px 0px 152px rgba(0, 196, 240, 0.42));
+          filter: drop-shadow(0px 0px 152px rgba(0, 196, 240, 0.42));
+  width: 575px;
+  height: 575px;
+  border-radius: 100%;
+}
+
+.hero {
+  position: absolute;
+  left: 30px;
+  bottom: -70px;
+}
+
+.hero-social {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+  border-radius: 100%;
+  padding: 20px;
+}
+
+.hero-social__github {
+  top: 25px;
+  left: 420px;
+}
+
+.hero-social__instagram {
+  top: 25px;
+  right: 420px;
+}
+
+.hero-social__telegram {
+  bottom: 165px;
+  right: 460px;
+}
+
+.hero-social__vk {
+  bottom: 10px;
+  right: 410px;
+}
+
+.hero-social:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
 }
 /*# sourceMappingURL=style.css.map */
