@@ -370,6 +370,42 @@ svg path {
   stroke-width: inherit;
 }
 
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 .header {
   background-color: #000;
 }
@@ -635,6 +671,11 @@ svg path {
 .skills-item__icon {
   margin-bottom: 40px;
   max-width: 60%;
+}
+
+.skills-item__icon:hover {
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
 }
 
 .skills-item__name {
