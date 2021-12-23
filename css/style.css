@@ -434,8 +434,12 @@ svg path {
 }
 
 .logo {
-  margin-right: 10px;
+  margin-right: 5px;
   max-width: 40px;
+}
+
+.name-logo {
+  max-width: 40%;
 }
 
 .header-hero {
@@ -445,7 +449,7 @@ svg path {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 100px 0 5px 0;
+  padding: 100px 0 3px 0;
 }
 
 .hello {
@@ -577,5 +581,60 @@ svg path {
   fill: #fff;
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
+}
+
+.skills {
+  background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+  padding: 113px 0 154px 0;
+}
+
+.skills-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  min-width: 270px;
+  height: 270px;
+  margin: 0 30px 30px 0;
+  background: #2A2A2A;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+  border-radius: 29px;
+}
+
+.skills-item:nth-child(4), .skills-item:nth-child(7) {
+  margin-right: 0;
+}
+
+.skills-item:nth-child(n+5) {
+  margin-bottom: 0;
+}
+
+.skills-item__name {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
 }
 /*# sourceMappingURL=style.css.map */
