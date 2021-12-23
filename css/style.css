@@ -624,12 +624,16 @@ svg path {
   border-radius: 29px;
 }
 
-.skills-item:nth-child(4), .skills-item:nth-child(7) {
+.skills-item:nth-child(3n+4) {
   margin-right: 0;
 }
 
 .skills-item:nth-child(n+5) {
   margin-bottom: 0;
+}
+
+.skills-item__icon {
+  margin-bottom: 20%;
 }
 
 .skills-item__name {
