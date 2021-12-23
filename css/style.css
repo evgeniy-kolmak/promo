@@ -364,6 +364,12 @@ img {
   max-width: 100%;
 }
 
+svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+
 .header {
   background-color: #000;
 }
@@ -429,6 +435,7 @@ img {
 
 .logo {
   margin-right: 10px;
+  max-width: 40px;
 }
 
 .header-hero {
@@ -510,38 +517,64 @@ img {
   bottom: -70px;
 }
 
-.hero-social {
+.icon {
   position: absolute;
   width: 90px;
   height: 90px;
-  background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+  background: #fff;
   border-radius: 100%;
   padding: 20px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  fill: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.hero-social__github {
+.icon-github {
   top: 25px;
   left: 420px;
 }
 
-.hero-social__instagram {
+.icon-github:hover {
+  background-color: #000;
+  fill: #fff;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.icon-instagram {
   top: 25px;
   right: 420px;
 }
 
-.hero-social__telegram {
+.icon-instagram:hover {
+  background-color: #e1306c;
+  fill: #fff;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.icon-telegram {
   bottom: 165px;
   right: 460px;
 }
 
-.hero-social__vk {
+.icon-telegram:hover {
+  background-color: #0088cc;
+  fill: #fff;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.icon-vk {
   bottom: 10px;
   right: 410px;
 }
 
-.hero-social:hover {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+.icon-vk:hover {
+  background-color: #597da3;
+  fill: #fff;
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
 }

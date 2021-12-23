@@ -53,25 +53,42 @@
   position: absolute
   left: 30px
   bottom: -70px
-.hero-social
+
+.icon
   position: absolute
   width: 90px
   height: 90px
-  background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%)
+  background: #fff
   border-radius: 100%
   padding: 20px
-  &__github
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+  fill: #000
+  transition: 0.4s
+  &-github
     top: 25px
     left: 420px
-  &__instagram
+    &:hover
+      background-color: #000
+      fill: #fff
+      transform: rotate(25deg)
+  &-instagram
     top: 25px
     right: 420px
-  &__telegram
+    &:hover
+      background-color: #e1306c
+      fill: #fff
+      transform: rotate(25deg)
+  &-telegram
     bottom: 165px
     right: 460px
-  &__vk
+    &:hover
+      background-color: #0088cc
+      fill: #fff
+      transform: rotate(25deg)
+  &-vk
     bottom: 10px
     right: 410px
-  &:hover
-    transition: 0.4s
-    transform: rotate(25deg)
+    &:hover
+      background-color: #597da3
+      fill: #fff
+      transform: rotate(25deg)
