@@ -1549,7 +1549,7 @@ button.swiper-pagination-bullet {
 }
 
 .portfolio-wrapper {
-  width: 930px;
+  max-width: 100em;
   min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1557,8 +1557,9 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
   border-radius: 29px;
   padding: 50px;
@@ -1612,5 +1613,87 @@ button.swiper-pagination-bullet {
   padding: 12px;
   border-radius: 100%;
   background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+}
+
+.button-swiper:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.footer {
+  padding: 50px 0;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-item {
+  margin: 0;
+}
+
+.footer-item__list {
+  list-style: none;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 18px;
+}
+
+.footer-item__list:last-child {
+  margin-bottom: 0;
+}
+
+.footer-item__link {
+  text-decoration: none;
+  color: #E4E4E4;
+  display: inline-block;
+}
+
+.footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-contacts__title {
+  margin-bottom: 18px;
+}
+
+.footer-contacts__link {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #E4E4E4;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.footer-contacts__link:last-child {
+  margin-bottom: 0;
+}
+
+.footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
