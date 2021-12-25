@@ -408,7 +408,7 @@ svg path {
 }
 
 .header {
-  background-color: #000;
+  background: #2a2a2a;
 }
 
 .header-top {
@@ -792,5 +792,86 @@ svg path {
   position: absolute;
   right: 240px;
   top: 620px;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #272727;
+  padding: 100px 0 150px 0;
+}
+
+.portfolio-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 54px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-wrapper {
+  max-width: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+  border-radius: 29px;
+  padding: 50px;
+}
+
+.portfolio-img {
+  margin-right: 81px;
+}
+
+.portfolio-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 296px;
+}
+
+.portfolio-text__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  text-align: center;
+}
+
+.portfolio-text__discription {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+}
+
+.portfolio-text__link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #E2A100;
+  text-align: center;
+}
+
+.img-link {
+  padding-left: 7px;
 }
 /*# sourceMappingURL=style.css.map */
