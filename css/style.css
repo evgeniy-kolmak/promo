@@ -1353,7 +1353,7 @@ button.swiper-pagination-bullet {
 }
 
 .skills {
-  padding: 113px 0 154px 0;
+  padding: 113px 0 114px 0;
 }
 
 .skills-wrapper {
@@ -1419,7 +1419,7 @@ button.swiper-pagination-bullet {
 
 .about {
   padding: 100px 0 114px 0;
-  max-width: 85em;
+  max-width: 80em;
   margin: auto;
 }
 
@@ -1549,7 +1549,7 @@ button.swiper-pagination-bullet {
 }
 
 .portfolio-wrapper {
-  width: 970px;
+  width: 930px;
   min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1604,5 +1604,13 @@ button.swiper-pagination-bullet {
 
 .img-link {
   padding-left: 7px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  border-radius: 100%;
+  background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
 }
 /*# sourceMappingURL=style.css.map */
