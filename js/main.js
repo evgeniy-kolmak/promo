@@ -20,3 +20,11 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+var $page = $('html, body');
+$('a[href*="#"]').click(function () {
+  $page.animate({
+    scrollTop: $($.attr(this, 'href')).offset().top - 120
+  }, 900);
+  return false;
+});
+
