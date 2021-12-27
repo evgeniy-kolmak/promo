@@ -1774,6 +1774,8 @@ button.swiper-pagination-bullet {
   }
   .set-white {
     border: 70px solid #E4E4E4;
+    width: 700px;
+    height: 700px;
   }
   .set-yellow {
     border: 30px solid #E2A200;
@@ -1804,9 +1806,156 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .container {
-    max-width: 768px;
+    max-width: 798px;
   }
+  .set {
+    width: 370px;
+    height: 370px;
+    border: 35px solid #00C4F0;
+  }
+  .hello {
+    font-size: 38px;
+  }
+  .hero {
+    bottom: -87px;
+    max-width: 90%;
+  }
+  .hero-text {
+    width: 380px;
+  }
+  .hero-text__title {
+    font-size: 55px;
+    line-height: 65px;
+    margin: 10px 0;
+  }
+  .hero-text__discription {
+    font-size: 16px;
+  }
+  .header-hero {
+    padding: 70px 0 50px 0;
+  }
+  .header-hero .icon {
+    width: 70px;
+    height: 70px;
+  }
+  .header-hero .icon-github {
+    left: 295px;
+  }
+  .header-hero .icon-instagram {
+    top: -60px;
+    right: 210px;
+  }
+  .header-hero .icon-telegram {
+    bottom: 200px;
+    right: 295px;
+  }
+  .header-hero .icon-vk {
+    right: 310px;
+    bottom: 85px;
+  }
+  .skills {
+    padding-bottom: 70px;
+  }
+  .skills-item {
+    min-width: 240px;
+    height: 240px;
+  }
+  .skills-item__name {
+    font-size: 20px;
+  }
+  .skills-item__icon {
+    margin-bottom: 25px;
+    max-width: 55%;
+  }
+  .about {
+    padding-top: 70px;
+  }
+  .about-text__info {
+    font-size: 18px;
+    padding: 50px;
+    width: 455px;
+  }
+  .about-text__title {
+    font-size: 35px;
+  }
+  .about-img {
+    max-width: 240px;
+    padding: 15px;
+  }
+  .img-1 {
+    top: 90px;
+    left: -40px;
+  }
+  .img-2 {
+    bottom: -10px;
+    left: -40px;
+  }
+  .img-3 {
+    top: 335px;
+    right: -40px;
+  }
+  .set-white {
+    border: 55px solid #E4E4E4;
+    width: 550px;
+    height: 550px;
+    top: 245px;
+  }
+  .set-yellow {
+    border: 30px solid #E2A200;
+    width: 275px;
+    height: 275px;
+    top: 185px;
+    right: 160px;
+  }
+  .set-blue {
+    border: 35px solid #00C4F0;
+    width: 400px;
+    height: 400px;
+    right: 90px;
+    top: 585px;
+  }
+}
+
+.portfolio {
+  padding-bottom: 100px;
+}
+
+.portfolio-title {
+  font-size: 35px;
+}
+
+.portfolio-img {
+  max-width: 45%;
+}
+
+.portfolio-text__discription {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 15px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 45px;
+  height: 45px;
+}
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer-wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__list {
+  font-size: 16px;
+}
+
+.footer-contacts__link {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
