@@ -2068,4 +2068,23 @@ button.swiper-pagination-bullet {
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 680px) {
+  .container {
+    max-width: 85%;
+  }
+  .nav-item__link {
+    font-size: 18px;
+  }
+  .name-logo-top {
+    display: none;
+  }
+  .header-hero__visual {
+    margin-left: 32%;
+  }
+  .hero-text__button {
+    font-size: 16px;
+    padding: 12px 36px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
