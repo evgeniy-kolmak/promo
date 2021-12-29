@@ -1144,13 +1144,32 @@ button.swiper-pagination-bullet {
 }
 
 .header-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d2d2d;
+}
+
+.header-top__menu {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 26px 0 39px 0;
+  margin: auto;
 }
 
 .header-nav {
@@ -1200,6 +1219,9 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .logo {
@@ -1966,7 +1988,7 @@ button.swiper-pagination-bullet {
   .header-hero {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
-    padding: 30px;
+    padding: 30px 0;
   }
   .header-hero__visual {
     margin-left: 37%;
@@ -2076,15 +2098,82 @@ button.swiper-pagination-bullet {
   .nav-item__link {
     font-size: 18px;
   }
-  .name-logo-top {
-    display: none;
-  }
   .header-hero__visual {
     margin-left: 32%;
   }
   .hero-text__button {
     font-size: 16px;
     padding: 12px 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-item__list {
+    display: none;
+  }
+  .header-hero {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-hero__visual {
+    margin: auto;
+    margin-top: 70px;
+  }
+  .skills-item {
+    margin: 0;
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: 51%;
+        flex-basis: 51%;
+    width: 240px;
+    height: 240px;
+  }
+  .skills-item:nth-child(3) {
+    margin-right: 0;
+  }
+  .skills-item:nth-child(n+4) {
+    margin-bottom: 30px;
+  }
+  .skills-item:nth-child(7) {
+    margin: 0;
+  }
+  .about-text__info {
+    font-size: 16px;
+    width: 420px;
+  }
+  .about-text__title {
+    font-size: 30px;
+  }
+  .set-white {
+    display: none;
+  }
+  .set-blue {
+    border: 25px solid #00C4F0;
+    width: 300px;
+    height: 300px;
+    right: 10px;
+    top: 595px;
+  }
+  .set-yellow {
+    border: 20px solid #E2A200;
+    width: 250px;
+    height: 250px;
+    top: 60px;
+    right: 260px;
+  }
+  .portfolio {
+    padding: 65px 0;
+  }
+  .portfolio-title {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  .footer-copyright {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .footer-copyright__info {
+    margin-top: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */

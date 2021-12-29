@@ -212,7 +212,7 @@
     max-width: 680px
   .header-hero
     flex-flow: wrap
-    padding: 30px
+    padding: 30px 0
     &__visual
       margin-left: 37%
 
@@ -303,11 +303,64 @@
     max-width: 85%
   .nav-item__link
     font-size: 18px
-  .name-logo-top
-    display: none
   .header-hero__visual
     margin-left: 32%
 
   .hero-text__button
     font-size: 16px
     padding: 12px 36px
+
+@media (max-width: 600px)
+  .nav-item__list
+    display: none
+  .header-hero
+    justify-content: center
+    &__visual
+      margin: auto
+      margin-top: 70px
+  .skills
+    &-item
+      margin: 0
+      margin-bottom: 30px
+      flex-basis: 51%
+      width: 240px
+      height: 240px
+      &:nth-child(3)
+        margin-right: 0
+      &:nth-child(n+4)
+        margin-bottom: 30px
+      &:nth-child(7)
+        margin: 0
+
+  .about
+    &-text__info
+      font-size: 16px
+      width: 420px
+    &-text__title
+      font-size: 30px
+
+  .set-white
+    display: none
+  .set-blue
+    border: 25px solid #00C4F0
+    width: 300px
+    height: 300px
+    right: 10px
+    top: 595px
+  .set-yellow
+    border: 20px solid #E2A200
+    width: 250px
+    height: 250px
+    top: 60px
+    right: 260px
+  .portfolio
+    padding: 65px 0
+    &-title
+      font-size: 30px
+      margin: 20px 0
+  .footer
+    &-copyright
+      margin-top: 50px
+      text-align: center
+      &__info
+        margin-top: 8px
