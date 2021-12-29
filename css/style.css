@@ -1958,4 +1958,114 @@ button.swiper-pagination-bullet {
 .footer-contacts__link {
   font-size: 16px;
 }
+
+@media (max-width: 895px) {
+  .container {
+    max-width: 680px;
+  }
+  .header-hero {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    padding: 30px;
+  }
+  .header-hero__visual {
+    margin-left: 37%;
+  }
+  .nav-item__link {
+    font-size: 16px;
+  }
+  .logo {
+    max-width: 35px;
+  }
+  .name-logo {
+    max-width: 35%;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+  }
+  .hero {
+    bottom: -65px;
+    max-width: 100%;
+  }
+  .hero-text {
+    margin-bottom: 20px;
+  }
+  .skills-item:nth-child(3) {
+    margin-right: 30px;
+  }
+  .skills-item:nth-child(even) {
+    margin-right: 0;
+  }
+  .skills-item:nth-child(7) {
+    margin-top: 30px;
+  }
+  .about {
+    padding: 50px 0;
+  }
+  .about-text__info {
+    font-size: 18px;
+    padding: 40px;
+  }
+  .img-1, .img-2, .img-3 {
+    display: none;
+  }
+  .set-white {
+    border: 50px solid #E4E4E4;
+    width: 500px;
+    height: 500px;
+  }
+  .set-yellow {
+    border: 25px solid #E2A200;
+    width: 250px;
+    height: 250px;
+    right: 20px;
+    top: 60px;
+  }
+  .set-blue {
+    border: 35px solid #00C4F0;
+    width: 350px;
+    height: 350px;
+    right: 15px;
+    top: 575px;
+  }
+  .portfolio-wrapper {
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 25px;
+  }
+  .portfolio-text {
+    max-width: 550px;
+  }
+  .portfolio-img {
+    max-width: 70%;
+    margin-bottom: 35px;
+  }
+  .portfolio .swiper-button-prev, .portfolio .swiper-button-next {
+    display: none;
+  }
+  .footer-wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-copyright {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-top: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .link-logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

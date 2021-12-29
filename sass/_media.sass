@@ -87,6 +87,7 @@
   .swiper-button-prev, .swiper-button-next
     width: 50px
     height: 50px
+
 @media (max-width: 1024px)
   .container
     max-width: 798px
@@ -205,3 +206,94 @@
   &-contacts
     &__link
       font-size: 16px
+
+@media (max-width: 895px)
+  .container
+    max-width: 680px
+  .header-hero
+    flex-flow: wrap
+    padding: 30px
+    &__visual
+      margin-left: 37%
+
+  .nav-item__link
+    font-size: 16px
+  .logo
+    max-width: 35px
+  .name-logo
+    max-width: 35%
+
+  .icon
+    width: 60px
+    height: 60px
+    padding: 18px
+
+  .hero
+    bottom: -65px
+    max-width: 100%
+    &-text
+      margin-bottom: 20px
+
+  .skills
+    &-item
+      &:nth-child(3)
+        margin-right: 30px
+      &:nth-child(even)
+        margin-right: 0
+      &:nth-child(7)
+        margin-top: 30px
+
+  .about
+    padding: 50px 0
+    &-text
+      &__info
+        font-size: 18px
+        padding: 40px
+
+  .img-1, .img-2, .img-3
+    display: none
+
+  .set-white
+    border: 50px solid #E4E4E4
+    width: 500px
+    height: 500px
+  .set-yellow
+    border: 25px solid #E2A200
+    width: 250px
+    height: 250px
+    right: 20px
+    top: 60px
+  .set-blue
+    border: 35px solid #00C4F0
+    width: 350px
+    height: 350px
+    right: 15px
+    top: 575px
+
+  .portfolio
+    &-wrapper
+      height: auto
+      flex-wrap: wrap
+      padding: 25px
+
+    &-text
+      max-width: 550px
+    &-img
+      max-width: 70%
+      margin-bottom: 35px
+
+    .swiper-button-prev, .swiper-button-next
+      display: none
+
+  .footer
+    &-wrapper
+      justify-content: space-evenly
+      flex-wrap: wrap
+    &-copyright
+      flex-basis: 50%
+      margin-top: 30px
+      align-items: center
+
+  .link-logo
+    justify-content: center
+    margin-bottom: 10px
