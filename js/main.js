@@ -28,3 +28,15 @@ $('a[href*="#"]').click(function () {
   return false;
 });
 
+$(document).ready(function () {
+  $('.header-burger').click(function (event) {
+    $('.header-burger, .nav-item').toggleClass('active');
+    $('body, html').toggleClass('scroll-hidden');
+  });
+
+  $('.nav-item__link').click(function (event) {
+    $('.nav-item, .header-burger').removeClass('active');
+    $('body, html').removeClass('scroll-hidden');
+  });
+});
+

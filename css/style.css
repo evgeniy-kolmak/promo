@@ -412,7 +412,7 @@ svg path {
   position: relative;
   width: 30px;
   height: 20px;
-  z-index: 3;
+  z-index: 2;
   margin: 0 20px;
 }
 
@@ -444,6 +444,27 @@ svg path {
   top: 9px;
   -webkit-transition: all .4s ease 0s;
   transition: all .4s ease 0s;
+}
+
+.header-burger.active::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 9px;
+}
+
+.header-burger.active .burger {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.header-burger.active::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+.scroll-hidden {
+  overflow-y: hidden;
 }
 
 /**
@@ -1187,7 +1208,7 @@ button.swiper-pagination-bullet {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 5;
   padding: 15px 0;
 }
 
@@ -1202,6 +1223,7 @@ button.swiper-pagination-bullet {
   padding: 25px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 2;
 }
 
 .header-top__menu {
@@ -1228,6 +1250,8 @@ button.swiper-pagination-bullet {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-item__list {
@@ -1267,6 +1291,8 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
+  z-index: 2;
 }
 
 .logo {
@@ -2167,8 +2193,30 @@ button.swiper-pagination-bullet {
   .header-burger {
     display: block;
   }
+  .nav-item {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: #3d3d3d;
+    margin: 0;
+    z-index: 1;
+    padding-top: 100px;
+    display: block;
+    -webkit-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+    overflow: auto;
+  }
   .nav-item__list {
-    display: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .nav-item__link {
+    font-size: 20px;
+  }
+  .nav-item.active {
+    top: 0;
   }
   .header-hero {
     -webkit-box-pack: center;
