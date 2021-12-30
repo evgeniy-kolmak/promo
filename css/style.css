@@ -407,6 +407,45 @@ svg path {
   }
 }
 
+.header-burger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  z-index: 3;
+  margin: 0 20px;
+}
+
+.header-burger::before, .header-burger::after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
+.header-burger::before {
+  top: 0;
+}
+
+.header-burger::after {
+  bottom: 0;
+}
+
+.header-burger .burger {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 9px;
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
 /**
  * Swiper 7.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1149,6 +1188,7 @@ button.swiper-pagination-bullet {
   top: 0;
   left: 0;
   z-index: 50;
+  padding: 15px 0;
 }
 
 .header-top::before {
@@ -1159,6 +1199,9 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 100%;
   background-color: #2d2d2d;
+  padding: 25px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header-top__menu {
@@ -1166,10 +1209,12 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: auto;
 }
 
 .header-nav {
@@ -1240,7 +1285,7 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 100px 0 3px 0;
+  padding: 200px 0 3px 0;
 }
 
 .hello {
@@ -1856,24 +1901,24 @@ button.swiper-pagination-bullet {
     font-size: 16px;
   }
   .header-hero {
-    padding: 70px 0 50px 0;
+    padding: 160px 0 50px 0;
   }
-  .header-hero .icon {
+  .icon {
     width: 70px;
     height: 70px;
   }
-  .header-hero .icon-github {
+  .icon-github {
     left: 295px;
   }
-  .header-hero .icon-instagram {
+  .icon-instagram {
     top: -60px;
     right: 210px;
   }
-  .header-hero .icon-telegram {
+  .icon-telegram {
     bottom: 200px;
     right: 295px;
   }
-  .header-hero .icon-vk {
+  .icon-vk {
     right: 310px;
     bottom: 85px;
   }
@@ -1996,6 +2041,11 @@ button.swiper-pagination-bullet {
   .nav-item__link {
     font-size: 16px;
   }
+  .link-logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .logo {
     max-width: 35px;
   }
@@ -2083,7 +2133,7 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
   }
-  .link-logo {
+  .footer-link-logo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2092,6 +2142,12 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 680px) {
+  .header-top {
+    padding: 10px;
+  }
+  .header-hero {
+    padding: 100px 0 50px 0;
+  }
   .container {
     max-width: 85%;
   }
@@ -2108,6 +2164,9 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 600px) {
+  .header-burger {
+    display: block;
+  }
   .nav-item__list {
     display: none;
   }
@@ -2167,6 +2226,12 @@ button.swiper-pagination-bullet {
   .portfolio-title {
     font-size: 30px;
     margin: 20px 0;
+  }
+  .footer-contacts {
+    text-align: center;
+  }
+  .footer-item {
+    display: none;
   }
   .footer-copyright {
     margin-top: 50px;

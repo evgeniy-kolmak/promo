@@ -113,22 +113,21 @@
         font-size: 16px
 
   .header-hero
-    padding: 70px 0 50px 0
-
-    .icon
-      width: 70px
-      height: 70px
-      &-github
-        left: 295px
-      &-instagram
-        top: -60px
-        right: 210px
-      &-telegram
-        bottom: 200px
-        right: 295px
-      &-vk
-        right: 310px
-        bottom: 85px
+    padding: 160px 0 50px 0
+  .icon
+    width: 70px
+    height: 70px
+    &-github
+      left: 295px
+    &-instagram
+      top: -60px
+      right: 210px
+    &-telegram
+      bottom: 200px
+      right: 295px
+    &-vk
+      right: 310px
+      bottom: 85px
 
   .skills
     padding-bottom: 70px
@@ -218,6 +217,8 @@
 
   .nav-item__link
     font-size: 16px
+  .link-logo
+    justify-content: center
   .logo
     max-width: 35px
   .name-logo
@@ -293,12 +294,15 @@
       flex-basis: 50%
       margin-top: 30px
       align-items: center
-
-  .link-logo
-    justify-content: center
-    margin-bottom: 10px
+    &-link-logo
+      justify-content: center
+      margin-bottom: 10px
 
 @media (max-width: 680px)
+  .header-top
+    padding: 10px
+  .header-hero
+    padding: 100px 0 50px 0
   .container
     max-width: 85%
   .nav-item__link
@@ -311,6 +315,8 @@
     padding: 12px 36px
 
 @media (max-width: 600px)
+  .header-burger
+    display: block
   .nav-item__list
     display: none
   .header-hero
@@ -359,6 +365,10 @@
       font-size: 30px
       margin: 20px 0
   .footer
+    &-contacts
+      text-align: center
+    &-item
+      display: none
     &-copyright
       margin-top: 50px
       text-align: center

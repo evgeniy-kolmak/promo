@@ -32,3 +32,33 @@ svg path
   80%
     transform: translateY(-10px)
     transform: translateY(-10px)
+
+.header-burger
+  display: none
+  position: relative
+  width: 30px
+  height: 20px
+  z-index: 3
+  margin: 0 20px
+  &::before, &::after
+    content: ''
+    background-color: #fff
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+    transition: all .4s ease 0s
+
+  &::before
+    top: 0
+  &::after
+    bottom: 0
+
+  .burger
+    background-color: #fff
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+    top: 9px
+    transition: all .4s ease 0s
