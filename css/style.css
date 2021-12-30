@@ -414,6 +414,7 @@ svg path {
   width: 35px;
   height: 20px;
   z-index: 2;
+  margin-right: 2%;
 }
 
 .header-burger::before, .header-burger::after {
@@ -425,8 +426,6 @@ svg path {
   left: 0;
   -webkit-transition: all .4s ease 0s;
   transition: all .4s ease 0s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .header-burger::before {
@@ -2177,9 +2176,6 @@ button.swiper-pagination-bullet {
   .container {
     max-width: 85%;
   }
-  .nav-item__link {
-    font-size: 18px;
-  }
   .header-hero__visual {
     margin-left: 32%;
   }
@@ -2330,7 +2326,8 @@ button.swiper-pagination-bullet {
     bottom: 35px;
   }
   .header-hero__visual {
-    margin-left: 12%;
+    margin-right: auto;
+    margin-left: 7%;
   }
   .about-text__info {
     width: 300px;
