@@ -350,6 +350,7 @@ body {
   background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
   color: #E4E4E4;
   font-family: 'Comfortaa', cursive;
+  overflow-x: hidden;
 }
 
 .container {
@@ -410,13 +411,13 @@ svg path {
 .header-burger {
   display: none;
   position: relative;
-  width: 30px;
+  width: 40px;
   height: 20px;
   z-index: 2;
   margin: 0 20px;
 }
 
-.header-burger::before, .header-burger::after {
+.header-burger::before, .header-burger::afters {
   content: '';
   background-color: #fff;
   position: absolute;
@@ -444,8 +445,6 @@ svg path {
   height: 2px;
   left: 0;
   top: 9px;
-  -webkit-transition: all .4s ease 0s;
-  transition: all .4s ease 0s;
 }
 
 .header-burger.active::before {
@@ -2206,6 +2205,8 @@ button.swiper-pagination-bullet {
     z-index: 1;
     padding-top: 100px;
     display: block;
+    -webkit-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
     overflow: auto;
   }
   .nav-item__list {

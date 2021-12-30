@@ -5,7 +5,7 @@ body
   background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%)
   color: $text-color
   font-family: 'Comfortaa', cursive
-  // font-family: 'Montserrat', sans-serif
+  overflow-x: hidden
 
 .container
   max-width: 1200px
@@ -36,11 +36,11 @@ svg path
 .header-burger
   display: none
   position: relative
-  width: 30px
+  width: 40px
   height: 20px
   z-index: 2
   margin: 0 20px
-  &::before, &::after
+  &::before, &::afters
     content: ''
     background-color: #fff
     position: absolute
@@ -60,7 +60,6 @@ svg path
     height: 2px
     left: 0
     top: 9px
-    transition: all .4s ease 0s
 
 .header-burger.active::before
   transform: rotate(45deg)
