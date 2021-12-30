@@ -411,13 +411,12 @@ svg path {
 .header-burger {
   display: none;
   position: relative;
-  width: 40px;
+  width: 35px;
   height: 20px;
   z-index: 2;
-  margin: 0 20px;
 }
 
-.header-burger::before, .header-burger::afters {
+.header-burger::before, .header-burger::after {
   content: '';
   background-color: #fff;
   position: absolute;
@@ -2288,6 +2287,60 @@ button.swiper-pagination-bullet {
   }
   .footer-copyright__info {
     margin-top: 8px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hello {
+    font-size: 30px;
+  }
+  .hero-text__title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .hero-text__button {
+    font-size: 14px;
+  }
+  .set {
+    border: 25px solid #00C4F0;
+    width: 300px;
+    height: 300px;
+  }
+  .hero {
+    max-width: 80%;
+    bottom: -55px;
+  }
+  .icon {
+    width: 65px;
+    height: 65px;
+  }
+  .icon-github {
+    left: 245px;
+  }
+  .icon-instagram {
+    top: -45px;
+    right: 185px;
+  }
+  .icon-telegram {
+    bottom: 140px;
+    right: 250px;
+  }
+  .icon-vk {
+    right: 250px;
+    bottom: 35px;
+  }
+  .header-hero__visual {
+    margin-left: 13%;
+  }
+  .about-text__info {
+    width: 300px;
+    padding: 30px;
+  }
+  .about-text__title {
+    font-size: 27px;
+  }
+  .set-yellow {
+    right: 145px;
   }
 }
 /*# sourceMappingURL=style.css.map */
