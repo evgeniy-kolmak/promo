@@ -360,6 +360,7 @@ body {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 img {
@@ -411,10 +412,9 @@ svg path {
 .header-burger {
   display: none;
   position: relative;
-  width: 35px;
+  width: 30px;
   height: 20px;
   z-index: 2;
-  margin-right: 2%;
 }
 
 .header-burger::before, .header-burger::after {
@@ -1203,12 +1203,21 @@ button.swiper-pagination-bullet {
 }
 
 .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 5;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .header-top::before {
@@ -1225,30 +1234,13 @@ button.swiper-pagination-bullet {
   z-index: 2;
 }
 
-.header-top__menu {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header-nav {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-}
-
 .nav-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   z-index: 2;
 }
