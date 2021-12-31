@@ -1145,6 +1145,10 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.header {
+  background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
+}
+
 .header-top {
   position: fixed;
   width: 100%;
@@ -1539,6 +1543,7 @@ button.swiper-pagination-bullet {
 }
 
 .portfolio {
+  background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
