@@ -315,6 +315,43 @@
 @media (max-width: 600px)
   .header-burger
     display: block
+    position: relative
+    width: 30px
+    height: 20px
+    z-index: 2
+    &::before, &::after
+      content: ''
+      background-color: #fff
+      position: absolute
+      width: 100%
+      height: 2px
+      left: 0
+      transition: all .4s ease 0s
+  &::before
+    top: 0
+  &::after
+    bottom: 0
+  .burger
+    background-color: #fff
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+    top: 9px
+
+.header-burger.active::before
+  transform: rotate(45deg)
+  top: 9px
+
+.header-burger.active .burger
+  transform: scale(0)
+
+.header-burger.active::after
+  transform: rotate(-45deg)
+  bottom: 9px
+
+.scroll-hidden
+  overflow-y: hidden
 
   .nav-item
     position: fixed
