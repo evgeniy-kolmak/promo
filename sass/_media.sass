@@ -91,6 +91,9 @@
   .container
     max-width: 798px
 
+  .menu, .menu-item
+    flex: 0.9
+
   .set
     width: 370px
     height: 370px
@@ -208,6 +211,8 @@
 @media (max-width: 895px)
   .container
     max-width: 680px
+  .menu-item__link
+    font-size: 16px
   .header-hero
     flex-flow: wrap
     padding: 30px 0
@@ -302,24 +307,23 @@
     padding: 10px
   .header-hero
     padding: 100px 0 30px 0
+  .header-content
+    height: 50px
   .container
     max-width: 85%
   .header-hero__visual
     margin-left: 32%
-
+  .menu-item__link
+    font-size: 14px
   .hero-text__button
     font-size: 16px
     padding: 12px 36px
-
+  .menu, .menu-item
+    flex: 1
 @media (max-width: 600px)
-  .header-burger
-    display: block
-  .nav
-    display: none
   .header-hero
     justify-content: center
     &__visual
-
       margin-left: 10%
       margin-top: 70px
   .skills
@@ -373,10 +377,69 @@
       &__info
         margin-top: 8px
 
+  .header-burger
+    display: block
+    position: relative
+    z-index: 3
+    width: 30px
+    height: 20px
+    &::before, &::after
+      content: ''
+      background-color: #fff
+      position: absolute
+      width: 100%
+      height: 2px
+      left: 0
+      transition: all .4s ease 0s
+    &::before
+      top: 0
+    &::after
+      bottom: 0
+  .burger
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+    top: 9px
+    background-color: #fff
+    transition: all .4s ease 0s
+  .menu
+    position: fixed
+    top: -100%
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #3d3d3d
+    margin-left: 0
+    padding-top: 100px
+    transition: all .4s ease 0s
+    &-item
+      display: block
+      text-align: center
+      &__list
+        margin-bottom: 20px
+      &__link
+        font-size: 18px
+  .menu.active
+    top: 0
+    transition: all .4s ease 0s
+
+  .header-burger.active
+    &::before
+      transform: rotate(45deg)
+      top: 9px
+    &::after
+      transform: rotate(-45deg)
+      bottom: 9px
+  .burger.active
+    transform: scale(0)
+
+  .menu, .menu-item
+    margin-left: 0
+
 @media (max-width: 450px)
   .hello
     font-size: 30px
-
   .hero
     &-text
       &__title
