@@ -30,12 +30,12 @@ $('a[href*="#"]').click(function () {
 
 $(document).ready(function () {
   $('.header-burger').click(function (event) {
-    $('.header-burger, .nav').toggleClass('active');
+    $('.header-burger, .burger, .menu').toggleClass('active');
     $('body, html').toggleClass('scroll-hidden');
   });
 
-  $('.nav-link').click(function (event) {
-    $('.nav, .header-burger').removeClass('active');
+  $('.menu-item__link').click(function (event) {
+    $('.menu, .header-burger, .active').removeClass('active');
     $('body, html').removeClass('scroll-hidden');
   });
 });
