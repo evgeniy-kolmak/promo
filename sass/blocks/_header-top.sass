@@ -1,65 +1,126 @@
-.header
-  background: #2a2a2a
-  &-top
-    display: flex
-    align-items: center
-    justify-content: space-between
-    position: fixed
-    width: 100%
-    top: 0
-    left: 0
-    z-index: 5
-    padding: 10px 0
-    &::before
-      content: ''
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-      background-color: #2d2d2d
-      padding: 25px 0
-      box-sizing: border-box
-      z-index: 2
+.header-top
+  background: #2d2d2d
+  padding: 15px 0
+  width: 100%
+  position: fixed
+  height: 80px
+  left: 0
+  top: 0
+  z-index: 5
 
-.nav-item
+  .header-list, .nav
+    display: flex
+    flex: 0.8
+    justify-content: space-between
+    margin-left: 6%
+
+.header-menu
   display: flex
   justify-content: space-between
-
+  align-items: center
   position: relative
-  z-index: 2
 
-  &__list
-    list-style: none
-    font-weight: 300
-    font-size: 18px
-    line-height: 21px
-  &__link
-    text-decoration: none
-    color: $text-color
-    display: inline-block
-    &::after
-      content: ''
-      display: block
-      background-color: #E2A300
-      height: 2px
-      width: 0
-      transition: 0.3s
+  .header-burger
+    display: block
+    position: relative
+    width: 30px
+    height: 20px
+    z-index: 3
+
+  .burger
+    background-color: #fff
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+    top: 9px
+    transition: all .4s ease 0s
+
+  .header-burger::before,
+  .header-burger::after
+    content: ''
+    background-color: #fff
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+    transition: all .4s ease 0s
+
+  .header-burger::before
+    top: 0
+
+  .header-burger::after
+    bottom: 0
+
+  .nav
+    position: fixed
+    top: -100%
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #000
+    padding-top: 150px
+    transition: all .3s ease 0s
+    overflow: auto
+
+  .nav.active
+    top: 0
+
+  .header-list
+    display: block
+    text-align: center
+
+.header-burger.active::before
+  transform: rotate(45deg)
+  top: 9px
+
+.header-burger.active .burger
+  transform: scale(0)
+
+.header-burger.active::after
+  transform: rotate(-45deg)
+  bottom: 9px
+
+.header-top:before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: #000000
+  z-index: 2
+  display: none
+
+.header-list
+  list-style: none
+  display: flex
+  margin: 0
+  padding: 0
+
+.list-menu
+  margin-right: 10px
+  &:last-child
+    margin-right: 0
+
+.logo
+  position: relative
+  z-index: 3
+
+.nav-link
+  color: $text-color
+  text-decoration: none
+  font-weight: 300
+  font-size: 18px
+  line-height: 21px
+  display: inline-block
+  &::after
+    content: ''
+    display: block
+    background-color: #E2A300
+    height: 2px
+    width: 0
+    transition: 0.3s
     &:hover
       &::after
         width: 100%
-
-// Логотип
-.link-logo
-  display: flex
-  align-items: center
-  justify-content: flex-end
-  position: relative
-  z-index: 2
-
-.logo
-  margin-right: 5px
-  max-width: 40px
-.name-logo
-  max-width: 40%
-// Конец логотипа
