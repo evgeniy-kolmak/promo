@@ -35,7 +35,7 @@ $(document).ready(function () {
   });
 
   $('.menu-item__link').click(function (event) {
-    $('.menu, .header-burger').removeClass('active');
+    $('.menu, .header-burger, .active').removeClass('active');
     $('body, html').removeClass('scroll-hidden');
   });
 });
