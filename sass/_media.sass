@@ -215,7 +215,7 @@
     font-size: 16px
   .header-hero
     flex-flow: wrap
-    padding: 30px 0
+    padding: 130px 0
     &__visual
       margin-left: 37%
 
@@ -266,7 +266,7 @@
     border: 25px solid #E2A200
     width: 250px
     height: 250px
-    right: 20px
+    right: 80px
     top: 60px
   .set-blue
     border: 35px solid #00C4F0
@@ -284,7 +284,7 @@
     &-text
       max-width: 550px
     &-img
-      max-width: 70%
+      max-width: 85%
       margin-bottom: 35px
 
     .swiper-button-prev, .swiper-button-next
@@ -297,9 +297,9 @@
     &-copyright
       flex-basis: 50%
       margin-top: 30px
-      align-items: center
+      text-align: center
     &-link-logo
-      justify-content: center
+      text-align: center
       margin-bottom: 10px
 
 @media (max-width: 680px)
@@ -320,6 +320,9 @@
     padding: 12px 36px
   .menu, .menu-item
     flex: 1
+  .set-yellow
+    right: 10px
+
 @media (max-width: 600px)
   .header-hero
     justify-content: center
@@ -409,13 +412,19 @@
     left: 0
     width: 100%
     height: 100%
+    max-width: 100vw
+    max-height: 100vh
     background-color: #3d3d3d
     margin-left: 0
     padding-top: 100px
     transition: all .4s ease 0s
+    overflow: auto
     &-item
-      display: block
-      text-align: center
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin-bottom: auto
       &__list
         margin-bottom: 20px
       &__link
@@ -443,38 +452,38 @@
   .hero
     &-text
       &__title
-        font-size: 48px
+        font-size: 44px
         line-height: 52px
       &__button
         font-size: 14px
 
   .set
     border: 25px solid #00C4F0
-    width: 300px
-    height: 300px
+    width: 265px
+    height: 265px
 
   .hero
-    max-width: 95%
+    max-width: 85%
     bottom: -55px
 
   .icon
     width: 65px
     height: 65px
     &-github
-      left: 245px
+      left: 190px
+      top: -22px
     &-instagram
-      top: -45px
-      right: 185px
+      top: -70px
+      right: 125px
     &-telegram
-      bottom: 140px
-      right: 250px
+      bottom: 170px
+      right: 190px
     &-vk
-      right: 250px
-      bottom: 35px
+      right: 195px
+      bottom: -15px
 
   .header-hero__visual
-    margin-right: auto
-    margin-left: 7%
+    margin: 50px 0 0 auto
 
   .about
     &-text
@@ -483,6 +492,10 @@
         padding: 30px
       &__title
         font-size: 27px
+
+  .portfolio
+    &-img
+      margin-bottom: 15px
   .set-yellow
     right: 145px
   .footer
