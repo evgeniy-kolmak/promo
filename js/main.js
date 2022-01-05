@@ -39,3 +39,21 @@ $(document).ready(function () {
     $('body, html').removeClass('scroll-hidden');
   });
 });
+
+$(document).ready(function () {
+  $('.open-form').click(function (event) {
+    $('.hero-text').removeClass('visual');
+    $('.hero-form').removeClass('not-visual');
+    $('.hero-form').toggleClass('visual');
+    $('.hero-text').toggleClass('not-visual');
+
+  });
+  $('.backout').click(function (event) {
+    $('.hero-text').removeClass('not-visual');
+    $('.hero-form').removeClass('visual');
+    $('.hero-form').toggleClass('not-visual');
+    $('.hero-text').toggleClass('visual');
+  });
+
+});
+

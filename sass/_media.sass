@@ -16,6 +16,15 @@
         font-size: 60px
         line-height: 70px
         margin: 20px 0
+    &-form
+      width: 425px
+
+  .contacts-form
+    padding: 40px
+    &__title
+      font-size: 27px
+    &__button
+      font-size: 13px
   .icon
     width: 80px
     height: 80px
@@ -113,6 +122,31 @@
         margin: 10px 0
       &__discription
         font-size: 16px
+    &-form
+      width: 360px
+
+  .contacts-form
+    padding: 30px
+    &__title
+      font-size: 27px
+      margin-bottom: 15px
+    &__button
+      font-size: 12px
+    &__link
+      margin-top: 10px
+
+  .input
+    font-size: 14px
+    padding: 10px 10px
+    line-height: 26px
+    padding-left: 50px
+    margin-bottom: 15px
+
+  .button-block
+    flex-direction: column
+
+  .success
+    font-size: 22px
 
   .header-hero
     padding: 160px 0 50px 0
@@ -209,16 +243,39 @@
       font-size: 16px
 
 @media (max-width: 895px)
+  .not-visual, .visual
+    position: static
+
+  .visual, .open-form-media
+    display: block
+  .not-visual, .open-form, .hero-form
+    display: none
+
+  .open-form-media
+    font-family: 'Montserrat', sans-serif
+    font-weight: bold
+    font-size: 18px
+    line-height: 20px
+
+    padding: 14px 38px
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%)
+    box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48)
+    border-radius: 6px
+    text-transform: uppercase
+    border: 0
+  .media-link
+    text-decoration: none
+    color: #000
+
   .container
     max-width: 680px
   .menu-item__link
     font-size: 16px
   .header-hero
     flex-flow: wrap
-    padding: 130px 0
+    padding-top: 130px
     &__visual
       margin-left: 37%
-
   .nav-item__link
     font-size: 16px
   .link-logo
@@ -234,7 +291,7 @@
     padding: 18px
 
   .hero
-    bottom: -65px
+    bottom: -87px
     max-width: 100%
     &-text
       margin-bottom: 20px
@@ -463,6 +520,9 @@
   .hero
     max-width: 85%
     bottom: -55px
+    &-text
+      width: 300px
+      margin-bottom: 60px
 
   .icon
     width: 65px

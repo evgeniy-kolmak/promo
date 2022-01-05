@@ -44,19 +44,42 @@
     <!-- /.header-top -->
     <div class="container">
       <section class="header-hero">
-        <div class="hero-text">
-          <span class="hello"><a id="home"></a>Привет</span>
+        <div class="hero-block">
+          <!-- Форма -->
+          <div class="hero-form not-visual">
+            <form id="form" class="contacts-form">
+              <h2 class="contacts-form__title">Оставьте заявку </h2>
+              <span class="success">Сообщение успешно отправлено</span>
+              <span class="contacts-form__subtitle">И в ближайшее время я Вам перезвоню</span>
+              <input type="text" name="user_name" placeholder="Ваше имя" class="input input-name">
+              <input type="text" name="user_phone" placeholder="Ваш телефон" class="input input-phone">
+              <input type="text" name="user_comment" placeholder="Комментарий к заказу" class="input input-comment">
+              <div class="button-block">
+                <button class="contacts-form__button">Бесплатная консультация</button>
+                <a class="contacts-form__link backout">Назад</a>
+              </div>
+              <!-- /.button-block -->
+            </form>
+            <!-- /.contacts-form -->
+          </div>
+          <!-- /.hero-form -->
+          <!-- Текстовый блок -->
+          <div class="hero-text visual">
+            <span class="hello"><a id="home"></a>Привет</span>
 
-          <h1 class="hero-text__title">Я Евгений
-            Колмак</h1>
-          <p class="hero-text__discription">Уже год занимаюсь веб-разработкой, фронтенд и немного бэкенда. А так же,
-            если Вам нужен дизайн сайта, верстка сайта, а
-            может сайт под ключ? Тогда свяжитесь со мной</p>
-          <a href="#contacts">
-            <button class="hero-text__button">Связаться</button>
-          </a>
+            <h1 class="hero-text__title">Я Евгений
+              Колмак</h1>
+            <p class="hero-text__discription">Уже год занимаюсь веб-разработкой, фронтенд и немного бэкенда. А так же,
+              если Вам нужен дизайн сайта, верстка сайта, а
+              может сайт под ключ? Тогда свяжитесь со мной</p>
+            <button class="open-form-media"><a class="media-link" href="#contacts">Связаться</a></button>
+            <!-- /.open-form-media -->
+            <button class="hero-text__button open-form">Связаться</button>
+
+          </div>
+          <!-- /.header-hero__text -->
         </div>
-        <!-- /.header-hero__text -->
+        <!-- /.hero-block -->
         <div class="header-hero__visual">
           <div class="set">
             <img class="hero" src="img/hero.png" alt="">
@@ -263,8 +286,8 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
-
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
