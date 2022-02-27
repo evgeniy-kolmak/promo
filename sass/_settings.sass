@@ -70,3 +70,33 @@ input
   transition: all 0.4s ease 0s
   transform: rotateY(-180deg)
   backface-visibility: hidden
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none
+
+@keyframes shake
+  10%, 90%
+    transform: translate3d(-1px, 0, 0)
+
+  20%, 80%
+    transform: translate3d(2px, 0, 0)
+
+  30%, 50%, 70%
+    transform: translate3d(-4px, 0, 0)
+
+  40%, 60%
+    transform: translate3d(4px, 0, 0)
+
+@keyframes earth
+  0%
+    transform: rotate(0deg)
+    transform: rotate(0deg)
+    fill: #ffbc00
+  50%
+    fill: #ecae02
+    filter: drop-shadow(0 0 30px #ffbc00)
+  100%
+    transform: rotate(360deg)
+    transform: rotate(360deg)
+    fill: #ffbc00

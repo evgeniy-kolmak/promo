@@ -1,23 +1,11 @@
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
   loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
 
 var $page = $('html, body');
@@ -53,7 +41,57 @@ $(document).ready(function () {
     $('.hero-form').removeClass('visual');
     $('.hero-form').toggleClass('not-visual');
     $('.hero-text').toggleClass('visual');
+    $('.input').removeClass('error');
+    $('label').fadeOut(1000);
+
   });
 
+});
+
+$('.contacts-form').validate({
+  messages: {
+    user_name: {
+      required: "Пожалуйста, заполните это поле",
+      minlength: "Имя не менее 2 символов",
+    },
+
+    user_phone: {
+      required: "Пожалуйста, заполните это поле",
+      minlength: "Телефон не менее 11 символов",
+    },
+  },
+  submitHandler: function (form) {
+    $.ajax({
+      type: "POST",
+      url: "telegram.php",
+      data: $(form).serialize(),
+    })
+      .done(function () {
+        $('.success').fadeIn(2000);
+        $('.contacts-form__subtitle').fadeOut(-1000);
+        $('.input-name').val('');
+        $('.input-phone').val('');
+        $('.input-comment').val('');
+
+        setTimeout(function () {
+          $('.success').fadeOut(-1000);
+          $('.contacts-form__subtitle').fadeIn(-1000)
+
+        },
+          5000
+        )
+
+        setTimeout(function (event) {
+          $('.hero-text').removeClass('not-visual');
+          $('.hero-form').removeClass('visual');
+          $('.hero-form').toggleClass('not-visual');
+          $('.hero-text').toggleClass('visual');
+
+
+        },
+          4000
+        )
+      });
+  }
 });
 

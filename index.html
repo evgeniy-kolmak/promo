@@ -22,7 +22,9 @@
       <div class="container">
         <div class="header-content">
           <a href="#home" class="header-logo">
-            <img src="img/logo.svg" alt="Логотип">
+            <svg class="logo">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
           </a>
           <div class="header-burger">
             <span class="burger"></span>
@@ -51,9 +53,12 @@
               <h2 class="contacts-form__title">Оставьте заявку </h2>
               <span class="success">Сообщение успешно отправлено</span>
               <span class="contacts-form__subtitle">И в ближайшее время я Вам перезвоню</span>
-              <input type="text" name="user_name" placeholder="Ваше имя" class="input input-name">
-              <input type="text" name="user_phone" placeholder="Ваш телефон" class="input input-phone">
-              <input type="text" name="user_comment" placeholder="Комментарий к заказу" class="input input-comment">
+              <input type="text" minlength="2" autocomplete="off" required name="user_name" placeholder="Ваше имя*"
+                class="input input-name">
+              <input type="number" minlength="11" autocomplete="off" required name="user_phone"
+                placeholder="Ваш телефон*" class="input input-phone">
+              <input type="text" autocomplete="off" name="user_comment" placeholder="Комментарий к заказу"
+                class="input input-comment">
               <div class="button-block">
                 <button class="contacts-form__button">Бесплатная консультация</button>
                 <a class="contacts-form__link backout">Назад</a>
@@ -195,6 +200,20 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide portfolio-wrapper">
+            <img src="img/project-img-0.jpg" alt="wallpaper-template" class="portfolio-img">
+            <div class="portfolio-text">
+              <h4 class="portfolio-text__title">Калькулятор зарплаты</h4>
+              <p class="portfolio-text__discription">
+                Калькулятор был разработан для главного подразделения отрасли. Очень прост в использовании и дальнейшей
+                модернизации,
+                апгрейде и добавлении нового функционала. Задача была выполнена менее чем за две недели, от первого
+                пикселя макета, до последней строчки кода.
+              </p>
+              <a target="_blank" href="https://evgeniy-kolmak.github.io/salary-calculator/"
+                class="portfolio-text__link">Подробнее<img class="img-link" src="img/arrow.svg" alt="More"></a>
+            </div>
+          </div>
+          <div class="swiper-slide portfolio-wrapper">
             <img src="img/project-img-1.jpg" alt="wallpaper-template" class="portfolio-img">
             <div class="portfolio-text">
               <h4 class="portfolio-text__title">Программа для бизнеса</h4>
@@ -289,6 +308,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/form.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
