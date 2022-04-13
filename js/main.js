@@ -99,3 +99,19 @@ $('.contacts-form').validate({
   }
 });
 
+// модаль;ное окно
+const modal = document.querySelector('.modal');
+const modalVisible = () => {
+  modal.classList.add('modal--visible');
+}
+
+const closeModal = document.querySelector('.close');
+console.log(closeModal);
+closeModal.onclick = () => {
+  modal.classList.remove('modal--visible');
+}
+
+window.onload = () => {
+  setTimeout(modalVisible, 1000)
+}
+
