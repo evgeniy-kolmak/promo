@@ -2738,6 +2738,10 @@ button.swiper-pagination-bullet {
   .hero {
     bottom: -65px;
   }
+  .design-icon {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2923,8 +2927,8 @@ button.swiper-pagination-bullet {
   }
   .modal-content {
     padding: 30px 20px 20px 20px;
-    width: 400px;
-    height: 320px;
+    width: 420px;
+    height: 360px;
   }
   .modal-btn {
     font-size: 14px;
@@ -3012,6 +3016,14 @@ button.swiper-pagination-bullet {
   .design-icon {
     width: 50px;
     height: 50px;
+  }
+  .modal-content {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .modal-subtitle {
+    margin: 0;
   }
   .modal-content {
     width: 320px;
