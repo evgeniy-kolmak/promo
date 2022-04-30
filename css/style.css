@@ -3018,9 +3018,12 @@ button.swiper-pagination-bullet {
     height: 50px;
   }
   .modal-content {
-    margin-top: 20px;
-    font-size: 20px;
-    line-height: 25px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .modal-title {
+    font-size: 22px;
+    line-height: 29px;
   }
   .modal-subtitle {
     margin: 0;
