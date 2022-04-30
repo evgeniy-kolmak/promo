@@ -99,19 +99,30 @@ $('.contacts-form').validate({
   }
 });
 
-// модаль;ное окно
+// модальное окно
 const modal = document.querySelector('.modal');
 const modalVisible = () => {
   modal.classList.add('modal--visible');
 }
 
 const closeModal = document.querySelector('.close');
-console.log(closeModal);
 closeModal.onclick = () => {
   modal.classList.remove('modal--visible');
 }
 
 window.onload = () => {
-  setTimeout(modalVisible, 1000)
+  setTimeout(modalVisible, 0)
 }
 
+const design = document.querySelector('.design');
+document.addEventListener('scroll', function () {
+  if (window.scrollY > document.querySelector('.header').getBoundingClientRect().y + 350) {
+    design.style.transform = 'translateY(-8px)';
+    design.style.opacity = 1;
+    design.style.transitionDuration = '.3s';
+  } else {
+    design.style.transform = 'translateY(8px)';
+    design.style.opacity = 0;
+
+  }
+})
